@@ -2,27 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado cesar</title>
   </head>
   <body>
-    <div id="root">
-      <h1>NIKE</h1>
-      <!-- Ingresar numero de empleado -->
-                <div id="login">
-            <input id="user" type="text" autocomplete="off" placeholder="Ingresa tu numero de empleado" pattern="001|002|003"required>
-                  <button id="ingresar" >Ingresar</button>
-          </div>
-		<hr />
-    <!--texto a cifrar-->
-    <label for="texto">Texto a cifrar:</label>
-					<textarea type="text" name="texto" id="texto" class="form-control"></textarea>
-          <!--caja de desplazamiento-->
-          <label for="desplazamiento">Posiciones de desplazamiento (1-25):</label>
-<input type="number" id="desplazamiento" name="desplazamiento" min="1" max="25">
-          <label for="cifrado">Texto cifrado:</label>
-					<textarea type="text" name="cifrado" id="cifrado" class="form-control" disabled="disabled"></textarea>
-
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+              <h1 class="text-center title">Cifrado César</h1>
+              <!--entrada-->
+              <input type="text" class="form-control center-block input-word" id="input" placeholder="Ingresa la palabra que desees">
+              <!--Botones-->
+                 <button type="button" id="btncipher">Encriptar</button>
+                 <button type="button" id="clearbutton"> Limpiar</button>
+                <button type="button" id="decipher">Desencriptar</button>
+              <!--resultado-->
+              <p id="result" class="result"></p>
+        <script src="cipher.js"></script>
+        <script src="index.js"></script>
   </body>
 </html>
