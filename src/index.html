@@ -2,19 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Cifrado cesar</title>
+    <p><title>Cifrado cesar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    
   </head>
   <body>
-              <h1 class="text-center title">Cifrado César</h1>
-              <!--entrada-->
-              <input type="text" class="form-control center-block input-word" id="input" placeholder="Ingresa la palabra que desees">
-              <!--Botones-->
-                 <button type="button" id="btncipher">Encriptar</button>
-                 <button type="button" id="clearbutton"> Limpiar</button>
-                <button type="button" id="decipher">Desencriptar</button>
-              <!--resultado-->
-              <p id="result" class="result"></p>
-        <script src="cipher.js"></script>
-        <script src="index.js"></script>
-  </body>
+
+        <h1> Esconde tu receta </h1><br/>
+          <!--entrada-->
+          <input type="text" id="input" placeholder="Ingresa la receta que desees ocultar">
+          <!--Botones-->
+
+            <button type="button" id="cipher">Encriptar</button>
+            <button type="button" id="clearbutton"> Limpiar</button>
+            <button type="button" id="decipher">Desencriptar</button><br/>
+<!--desplazamiento -->
+          <label>Desplazamiento:
+      <input type="number" min="1" max="25" id="desplazamiento" class="form-control"></input> <br/></label>
+
+          </div>
+        <!--resultado-->
+<p id="result" class="result"></p>
+<script src="cipher.js"></script>
+<script  src="index.js"></script>
+</body>
 </html>

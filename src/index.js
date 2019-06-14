@@ -1,73 +1,39 @@
-//window.addEventListener('load'), () => {
-  /* variables*/
+/* variables*/
   let input = document.getElementById('input');
-  let btncipher = document.getElementById('btncipher');
+  let cipher = document.getElementById('cipher');
   let decipher = document.getElementById('decipher');
   let result = document.getElementById('result');
 
   /* función para encriptar una palabra*/
-  btncipher.addEventListener('click', () => {
-    let fuera=33;
-    let inputWord= document.getElementById('input').value;
-    let cipher = window.cipher.encode(fuera, inputWord);
-    console.log(cipher);
-    //if (inputWord.match(/[A-zA-Z]/)) {
-      /* let cipher = word =>  {
-  // variable para la salida de la palabra encriptada*/
-      //let output = '';
-      // recorrido dentro de la palabra ingresada
-      //for (let i = 0; i < inputWord.length;i++) {
-        // variable en donde se convierte la letra en codigo ascii
-        //let code = inputWord.charCodeAt(i);
-        // variable que guarda la conversion de codigo ascii a letra
-        //let code2 = inputWord[i];
-        // analizando las letras mayusculas A= 65 Y Z= 90
-        //if ((code >= 65) && (code <= 90)) {
-          // ejecutando los 33 espacios y convirtiendo de lenguaje ascii a letra
-          //code2 = String.fromCharCode(((code - 65 + 33) % 26) + 65);
-          // analizando las letras minusculas a= 97 y z=122 y ejecutando los 33 espacios
-        //} else if ((code >= 97) && (code <= 122)) {
-      /*    code2 = String.fromCharCode(((code - 97 + 33) % 26) + 97);
-        }
-        // salida de la palabra encriptada
-        output += code2;
-      }
+  cipher.addEventListener('click', () => {
+    let inputWord = input.value;
+   let cambio=document.getElementById('desplazamiento').value;
+    console.log(cambio);
+    let cipher = window.cipher.encode(cambio, inputWord);
       /* Resultado*/
-    document.getElementById('result').innerHTML= 'El texto encriptado ' + cipher ;
-});
-    //else
-     //{
-    //  alert('Ingresa una palabra');
-    /*
+      result.innerHTML = 'El texto encriptado es : ' + cipher ;
+
+
+  });
 
   /* función para desencriptar una palabra */
   decipher.addEventListener('click', () => {
     /* $('#desencriptar').click(function() {*/
     let inputWord = input.value;
-    // variable para la salida de la palabra encriptada
-    //let output = '';
-    // recorrido dentro de la palabra ingresada
-    //for (let i = 0; i < inputWord.length;i++) {
+ let cambio=(document.getElementById('desplazamiento').value);
+    console.log(cambio);
+      let decipher = window.cipher.decode(cambio,inputWord);
     // variable en donde se convierte la letra en codigo ascii
-    //  let code = inputWord.charCodeAt(i);
-      // variable que guarda la conversion de codigo ascii a letra
-      /*let code2 = inputWord[i];
-      // analizando las letras mayusculas A= 65 Y Z= 90
-      if ((code >= 65) && (code <= 90)) {
-      // ejecutando los 33 espacios y convirtiendo de lenguaje ascii a letra
-        code2 = String.fromCharCode(((code - 65 - 33 + 26 * 2) % 26) + 65);
-      } else if ((code >= 97) && (code <= 122)) {//  analizando las letras minusculas a= 97 y z=122 y ejecutando los 33 espacios
-        code2 = String.fromCharCode(((code - 97 - 33 + 26 * 2) % 26) + 97);
-      };
-      // salida de la palabra encriptada
-      output += code2;
-    };
+
     /* resultado*/
-  /*  result.innerHTML = 'El texto desencriptado es : ' + output ;
-  })
+    result.innerHTML = 'El texto desencriptado es : ' + decipher ;
+  });
+
+
+
   /* función para limpiar la entrada*/
-  /*let eraser = document.getElementById('clearbutton');
+  let eraser = document.getElementById('clearbutton');
   eraser.addEventListener('click', () => {
   /* borrar el campo.*/
-  //  input.value = '';
- })
+    input.value = '';
+  });

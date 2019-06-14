@@ -1,9 +1,82 @@
-body {
-    background:#FFFFFF;
+body
+{
+  background-color: #fcb500;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
-input:invalid {
-  border: 1px solid red;
+h1
+{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 31px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #52435E;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
 }
-input:valid {
-  border: 1px solid green;
+*{
+  text-align: center;
+}
+label{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 21px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #52435E;
+font-weight: 700;
+}
+button
+{
+background: #eb94d0;
+margin-right: 3%;
+margin-left: 3%;
+-webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+font-family: Arial;
+  color: #52435E;
+  font-size: 17px;
+  padding: 19px;
+  text-decoration: none;
+}
+#desplazamiento
+{
+  -webkit-border-radius: 28;
+background:#BC5FFF;
+text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    -moz-border-radius: 28;
+    border-radius: 18px;
+    -webkit-box-shadow: 6px 5px 24px #666666;
+    -moz-box-shadow: 6px 5px 24px #666666;
+    box-shadow: 6px 5px 20px #666666;
+  font-family: "Comic Sans";
+  color: black;
+    font-size: 17px;
+    padding: 5px;
+    text-decoration: none;
+  }
+  #input
+  {
+    color: #52435E;
+background: #FFFFFF;
+font-family: "Comic Sans MS", sans-serif;
+font-size: 15px;
+height:420px;
+width:550px;
+  }
+#result
+{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #52435E;
+  font-weight: 700;
 }
